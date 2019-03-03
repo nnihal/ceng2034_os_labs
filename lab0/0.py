@@ -1,5 +1,6 @@
 import os
 
+"""
 myfolder = os.getcwd()
 
 print(os.system("clear"))
@@ -19,3 +20,11 @@ mypath = os.path.join(myfolder , "another")
 print(mypath)
 
 print("is it dir ?", os.path.isdir(mypath))
+"""
+
+os.chdir(os.getenv("HOME"))
+os.mkdir("os_lab_0")
+os.chdir("os_lab_0")
+os.system("touch 2.txt 1.py")
+print (os.system("ls -lt"))
+print (os.system("ls *txt"))
