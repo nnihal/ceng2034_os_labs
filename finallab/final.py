@@ -62,13 +62,12 @@ for f in files:
 
 
  magic.from_file('jpegF')
-'JPEG image data, JFIF standard 1.01'
-
+'JPEG image data'
  magic.from_file('jpegF', mime=True)
 'image/jpeg'
 
  magic.from_file('pngF')
-'PNG image data, 600 x 1000, 8-bit colormap, non-interlaced'
+'PNG image data'
 
 magic.from_file('pngF', mime=True)
 'image/png'
